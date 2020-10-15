@@ -32,3 +32,40 @@ func square(number: Int) {
 square(number: 8)
 square(number: 9)
 square(number: 7)
+func square(number: Int) -> In {
+    return number * number
+}
+
+let result = square(number: 8)
+
+
+func greet(_ person: String) {
+    print("hello, \(person)!")
+}
+
+greet("Taylor")
+
+
+func greet(_person: String, nicely: Bool=true){
+    if nicely == true {
+        print("Hello, \(person)!")
+    }else {
+        print("Oh no, it's \(person) again...")
+    }
+}
+
+greet("Taylor")
+greet("taylor", nicely: false)
+
+
+print("Haters","gonna","hate")
+
+func square(number: Int...) {
+    for number in numbers {
+        print("\(number) squared is \(number * number)")
+    }
+}
+
+square(number: 1, 2, 3, 4, 5)
+
+
